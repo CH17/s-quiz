@@ -22,7 +22,6 @@
 		require_once($wp_root.'/wp-admin/includes/admin.php');
 	}
 
-
 if(isset($_POST['post_array']) && isset($_POST['answer_array'])){
 
 	$post_array = $_POST['post_array'];
@@ -57,9 +56,7 @@ if(isset($_POST['post_array']) && isset($_POST['answer_array'])){
 				$correct_result= $correct_result+1;
 
 		  }
-
     }
-
 	}
 
 	$result = array(
@@ -79,7 +76,6 @@ if(isset($_POST['post_array']) && isset($_POST['answer_array'])){
 	}
 
 
-	
 	global $wpdb;
 
 	$table_name = $wpdb->prefix . "sq_participates";
@@ -100,6 +96,5 @@ if(isset($_POST['post_array']) && isset($_POST['answer_array'])){
 	}
 
 }
-
 
 ?>

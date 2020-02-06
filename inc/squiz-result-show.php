@@ -57,11 +57,9 @@ if(isset($_POST['post_array'])){
 					}
 
 			}
-
 		}
 				
 		$output .='</div>';
-
 		$count++;
 
 	}
