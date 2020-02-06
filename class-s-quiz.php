@@ -1,38 +1,26 @@
 <?php
 /**
- * S Quiz.
+ * S-Quiz.
  *
  * @package   S_Quiz
- * @author    Team Systway <hello@systway.com>
+ * @author    CH17 <contact.choyon@gmail.com>
  * @license   GPL-2.0+
- * @link      http://systway.com
- * @copyright 2015 Systway
+ * @link      http://choyon.net
+ * @copyright 2019 Ch17
  */
 
-/**
- * Plugin class.
- *
- * TODO: Rename this class to a proper name for your plugin.
- *
- * @package S_Quiz
- * @author  Team Systway <hello@systway.com>
- */
 class S_Quiz {
 
 	/**
 	 * Plugin version, used for cache-busting of style and script file references.
 	 *
-	 * @since   1.0.0
+	 * @since   2.1.0
 	 *
 	 * @var     string
 	 */
-	protected $version = '1.0.0';
+	protected $version = '2.1.0';
 
 	/**
-	 * Unique identifier for your plugin.
-	 *
-	 * Use this value (not the variable name) as the text domain when internationalizing strings of text. It should
-	 * match the Text Domain file header in the main plugin file.
 	 *
 	 * @since    1.0.0
 	 *
@@ -59,17 +47,12 @@ class S_Quiz {
 	protected $plugin_screen_hook_suffix = null;
 
 	/**
-	 * Initialize the plugin by setting localization, filters, and administration functions.
 	 *
 	 * @since     1.0.0
 	 */
 	private function __construct() {
 
-		// Load plugin text domain
 		add_action( 'init', array( $this, 'load_plugin_textdomain' ) );
-
-		// Add the options page and menu item.
-		// add_action( 'admin_menu', array( $this, 'add_plugin_admin_menu' ) );
 
 		// Load admin style sheet and JavaScript.
 		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_styles' ) );
@@ -81,7 +64,7 @@ class S_Quiz {
 
 		// Define custom functionality. Read more about actions and filters: http://codex.wordpress.org/Plugin_API#Hooks.2C_Actions_and_Filters
 		add_action( 'init', array( $this, 'quiz_module_init' ) );
-		add_filter( 'TODO', array( $this, 'filter_method_name' ) );
+		
 
 		add_action( 'media_buttons', array( $this, 'media_buttons' ), 20 );
 		add_action( 'admin_footer', array( $this, 'tzsc_popup_html' ) );
@@ -217,13 +200,6 @@ class S_Quiz {
 
 	public function add_plugin_admin_menu() {
 
-		/*
-		 * TODO:
-		 *
-		 * Change 'Page Title' to the title of your plugin admin page
-		 * Change 'Menu Text' to the text for menu item for the plugin settings page
-		 * Change 'plugin-name' to the name of your plugin
-		 */
 		$this->plugin_screen_hook_suffix = add_plugins_page(
 			__( 'Page Title', $this->plugin_slug ),
 			__( 'Menu Text', $this->plugin_slug ),

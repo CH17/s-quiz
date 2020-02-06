@@ -1,6 +1,15 @@
 <?php
-	
-$wp_root = '../../../..';
+/**
+ * S-Quiz.
+ *
+ * @package   S_Quiz
+ * @author    CH17 <contact.choyon@gmail.com>
+ * @license   GPL-2.0+
+ * @link      http://choyon.net
+ * @copyright 2019 Ch17
+ */
+
+ $wp_root = '../../../..';
 	if (file_exists($wp_root.'/wp-load.php')) {
 
 		require_once($wp_root.'/wp-load.php');

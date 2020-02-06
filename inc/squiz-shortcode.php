@@ -1,5 +1,16 @@
 <?php
 
+/**
+ * S-Quiz.
+ *
+ * @package   S_Quiz
+ * @author    CH17 <contact.choyon@gmail.com>
+ * @license   GPL-2.0+
+ * @link      http://choyon.net
+ * @copyright 2019 Ch17
+ */
+
+
 /***************************************
 ## Shortcode Files
 ## Package@ S-Quiz
@@ -59,7 +70,6 @@ function quiz_func( $atts, $content = null ) {
 
 	if(!empty($my_posts)){
 
-		//default and one by one layout
 		
 			$count = 1;
 			$total_qstn = count($my_posts);
