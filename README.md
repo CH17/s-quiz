@@ -29,7 +29,7 @@ S-Quiz is a simple WP plugin to generate quiz and get users feedback
 - Select one or more **Subject** if you have multiple sets. 
 - Finally Publish your quiz set.
 - To display any set of quiz into pages or posts: use shortcode
-``` [s_quiz subject="quiz_subject" layout="0 or 1 or 2" result_type="mark/percentage" show="correct_result"][/s_quiz]```
+``` [s_quiz subject="quiz_subject" layout="1 or 2" result_type="mark/percentage" show="correct_result"][/s_quiz]```
 * Parameters:
    * ```subject:  title of you subject or set ```
    * ```layout:  1 : one after another ```  or ``` 2 : all in one page ```

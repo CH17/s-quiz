@@ -1,27 +1,12 @@
 <?php
 /**
- * The WordPress Plugin Boilerplate.
- *
- * A foundation off of which to build well-documented WordPress plugins that also follow
- * WordPress coding standards and PHP best practices.
+ * S-Quiz.
  *
  * @package   S_Quiz
- * @author    Team Systway <hello@systway.com>
+ * @author    CH17 <contact.choyon@gmail.com>
  * @license   GPL-2.0+
- * @link      http://systway.com
- * @copyright 2015 Systway
- *
- * @wordpress-plugin
- * Plugin Name: S-Quiz
- * Plugin URI:  TODO
- * Description: A simple Quiz plugin.
- * Version:     1.0.0
- * Author:      Team Systway
- * Author URI:  http://systway.com
- * Text Domain: s-quiz-locale
- * License:     GPL-2.0+
- * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
- * Domain Path: /lang
+ * @link      http://choyon.net
+ * @copyright 2019 Ch17
  */
 
 // If this file is called directly, abort.
@@ -46,7 +31,7 @@ require_once( plugin_dir_path( __FILE__ ).'/inc/squiz-shortcode.php' );
 register_activation_hook( __FILE__, array( 'S_Quiz', 'activate' ) );
 register_deactivation_hook( __FILE__, array( 'S_Quiz', 'deactivate' ) );
 
-// TODO: replace Plugin_Name with the name of the plugin defined in `class-plugin-name.php`
+
 S_Quiz::get_instance();
 
 	function pt_my_activation_function() {
