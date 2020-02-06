@@ -1,88 +1,57 @@
-=== Plugin Name ===
-Contributors: dotcomdotbd
-Donate link: http://example.com/
-Tags: quiz, wp-quiz
-Requires at least: 3.5.1
-Tested up to: 3.6
-Stable tag: 2.1.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+# S-Quiz
 
-AN easy WP plugin to generate quiz and get users responses.
+S-Quiz is a simple WP plugin to generate quiz and get users feedback
 
-== Description ==
+### Info
 
-This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+- Contributors: CH17
+- Tags: quiz, wp-quiz
+- Requires at least: 3.5.1
+- Tested up to: 5.3.1
+- Stable tag: 2.1.0
 
-A few notes about the sections above:
 
-*   "Contributors" is a comma separated list of wp.org/wp-plugins.org usernames
-*   "Tags" is a comma separated list of tags that apply to the plugin
-*   "Requires at least" is the lowest version that the plugin will work on
-*   "Tested up to" is the highest version that you've *successfully used to test the plugin*. Note that it might work on
-higher versions... this is just the highest one you've verified.
-*   Stable tag should indicate the Subversion "tag" of the latest stable version, or "trunk," if you use `/trunk/` for
-stable.
 
-    Note that the `readme.txt` of the stable tag is the one that is considered the defining one for the plugin, so
-if the `/trunk/readme.txt` file says that the stable tag is `4.3`, then it is `/tags/4.3/readme.txt` that'll be used
-for displaying information about the plugin.  In this situation, the only thing considered from the trunk `readme.txt`
-is the stable tag pointer.  Thus, if you develop in trunk, you can update the trunk `readme.txt` to reflect changes in
-your in-development version, without having that information incorrectly disclosed about the current stable version
-that lacks those changes -- as long as the trunk's `readme.txt` points to the correct stable tag.
+### Installation
 
-    If no stable tag is provided, it is assumed that trunk is stable, but you should specify "trunk" if that's where
-you put the stable version, in order to eliminate any doubt.
+```php
+- Upload 's-quiz' to the '/wp-content/plugins/' directory
+- Activate the plugin through the 'Plugins' menu in WordPress
+```
 
-== Installation ==
 
-This section describes how to install the plugin and get it working.
+### Usage
 
-e.g.
 
-1. Upload `s-quiz` to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
+- Go to ***Quizzes > Add New*** – to create new quiz. Add title and options. Then select **Correct Answer** if this one is the correct answer. 
+- Create more answer using ***Add Another Entry*** Button. 
+- Select one or more **Subject** if you have multiple sets. 
+- Finally Publish your quiz set.
+- To display any set of quiz into pages or posts: use shortcode
+``` [s_quiz subject="quiz_subject" layout="0 or 1 or 2" result_type="mark/percentage" show="correct_result"][/s_quiz]```
+* Parameters:
+   * ```subject:  title of you subject or set ```
+   * ```layout:  1 : one after another ```  or ``` 2 : all in one page ```
+   * ```result_type: mark: display result as marks 10/10 ``` or ```percentage: display result as percentage eg. 85%```
+  * ```show:  if you want to display correct answer to the user after the test ```
+ 
+- Admin can see participation list from ***Quizzes > Participates*** menu.
 
-== Frequently Asked Questions ==
+### Demo
+[S-Quiz Demo](http://lab.systway.com/s-quiz/2016/06/17/demo-quiz/)
 
-= A question that someone might have =
 
-An answer to that question.
+### Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-= What about foo bar? =
+Please make sure to update tests as appropriate.
 
-Answer to foo bar dilemma.
+### Acknowledgement
+[CMB2](https://github.com/CMB2/CMB2)
 
-== Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
+### License
 
-== Changelog ==
-
-= 1.0 =
-* A change since the previous version.
-* Another change.
-
-= 0.5 =
-* List versions from most recent at top to oldest at bottom.
-
-== Upgrade Notice ==
-
-= 1.0 =
-Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.
-
-= 0.5 =
-This version fixes a security related bug.  Upgrade immediately.
-
-== Arbitrary section ==
-
-You may provide arbitrary sections, in the same format as the ones above.  This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation."  Arbitrary sections will be shown below the built-in sections outlined above.
+- License: GPLv2 or later
+- License URI: <http://www.gnu.org/licenses/gpl-2.0.html>
