@@ -1,0 +1,70 @@
+/* This stylesheet is used to style the public view of the plugin. */
+
+
+.squiz_content{
+	display: none;
+}
+
+.squiz_active{
+
+	display: block;
+}
+.squiz_btn_paginate {
+
+	margin-top: 30px;
+ display: inline-block;
+
+}
+.squiz_btn_paginate button{
+	
+    margin-right: 40px;
+   
+    
+
+}
+ 
+.loading_icon{
+
+
+    background: url("../img/ajax-loader.gif") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    top: 37px;
+    float: left;
+    height: 32px;
+    left: 157px;
+    position: relative;
+    width: 32px;
+
+
+}
+#submit_btn_all{
+
+        margin-top: 30px;
+}
+
+.answer_result{
+
+}
+
+.squiz_result_content .right_answer{
+  background: url("../img/right.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+  display: inline-block;
+  height: 15px;
+  width: 14px;
+}
+
+.squiz_btn_paginate .sq_submit {
+	max-width: 100%;
+}
+
+.sq_submit {
+	max-width: 50%;
+	padding: 15px 0 0 0;
+}
+
+.sq_submit .form-group label {
+	margin-bottom: 5px;
+	display: block;
+}
+.sq_submit .form-group {
+	padding-bottom: 10px;
+}

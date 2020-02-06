@@ -1,0 +1,45 @@
+/* This stylesheet is used to style the admin option form of the plugin. */
+
+.tzsc-shortcode-select{
+	margin-bottom: 20px; 
+}
+
+.tzsc-shortcode-select label {
+    display: inline-block;
+    width: 155px;
+    font-size: 14px; 
+}
+
+.tzsc-shortcode-select select {
+	width: 250px;
+}
+
+.tzsc-shortcode-select input {
+	width: 250px;
+}
+
+.tzsc-shortcode-select select option {
+    padding: 4px 5px;
+}
+
+#all_participates_list{
+	border: 1px solid #cccccc;
+}
+
+.participate-area .dataTables_wrapper .dataTables_length {
+	margin: 10px 0;
+}
+.participate-area .dataTables_wrapper .dataTables_filter {
+	margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
